@@ -26,11 +26,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X657C
-PRODUCT_NAME := lineage_X657C
+PRODUCT_NAME := nad_X657C
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix SMART 5
 PRODUCT_MANUFACTURER := Infinix
@@ -41,5 +41,3 @@ TARGET_VENDOR_PRODUCT_NAME := X657C
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Infinix/X657C-GL/Infinix-X657C:10/QP1A.190711.020/GH-GL-220821V327:user/release-keys
-
-
