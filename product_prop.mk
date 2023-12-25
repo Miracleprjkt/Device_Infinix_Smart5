@@ -1,4 +1,4 @@
-# system.prop for mt6765-common
+# system.prop for mt6761-common
 
 # Audio
 PRODUCT_PRODUCT_PROPERTIES  += \
@@ -42,10 +42,6 @@ PRODUCT_PRODUCT_PROPERTIES  += \
     ro.mtk_perf_fast_start_win=1 \
     ro.mtk_perf_response_time=1
 
-# Screen Density
-PRODUCT_PRODUCT_PROPERTIES  += \
-    ro.sf.lcd_density=295
-
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES  += \
    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
@@ -53,4 +49,3 @@ PRODUCT_PRODUCT_PROPERTIES  += \
    ro.surface_flinger.vsync_event_phase_offset_ns=8300000 \
    ro.surface_flinger.vsync_sf_event_phase_offset_ns=830000 \
    ro.surface_flinger.present_time_offset_from_vsync_ns=0
-
