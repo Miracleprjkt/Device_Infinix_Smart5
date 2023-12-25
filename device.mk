@@ -42,6 +42,11 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiOverlay \
+    TetheringConfigOverlay
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mt6761.rc \
