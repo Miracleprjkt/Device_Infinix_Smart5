@@ -83,6 +83,11 @@ PRODUCT_PACKAGES += \
     libsuspend \
     android.hardware.health@2.0
 
+# System properties
+-include $(LOCAL_PATH)/product_prop.mk
+
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
