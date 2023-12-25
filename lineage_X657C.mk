@@ -26,11 +26,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X657C
-PRODUCT_NAME := nad_X657C
+PRODUCT_NAME := lineage_X657C
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix SMART 5
 PRODUCT_MANUFACTURER := Infinix
