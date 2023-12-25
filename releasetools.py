@@ -33,10 +33,6 @@ def AddImage(info, basename, dest):
 
 def OTA_InstallEnd(info):
   info.script.Print("Patching device-tree and verity images...")
-   AddImage(info, "seccfg.bin", "/dev/block/platform/bootdevice/by-name/seccfg")
-   AddImage(info, "nvcfg.img", "/dev/block/platform/bootdevice/by-name/nvcfg")
-  AddImage(info, "nvdata.img", "/dev/block/platform/bootdevice/by-name/nvdata")
-  AddImage(info, "nvram.bin", "/dev/block/platform/bootdevice/by-name/nvram")
   AddImage(info, "dtbo.img", "/dev/block/platform/bootdevice/by-name/dtbo")
   AddImage(info, "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta")
   return
