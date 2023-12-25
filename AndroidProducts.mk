@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_X657C.mk
+   $(LOCAL_DIR)/nad_X657C.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X657C-user \
-    lineage_X657C-userdebug \
-    lineage_X657C-eng
+    nad_X657C-user \
+    nad_X657C-userdebug \
+    nad_X657C-eng
