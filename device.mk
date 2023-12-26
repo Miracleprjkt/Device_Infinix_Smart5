@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Performance level
+PRODUCT_PACKAGES += \
+    init.performance_level.rc
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
