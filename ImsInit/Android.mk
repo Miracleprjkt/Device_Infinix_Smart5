@@ -15,4 +15,4 @@ LOCAL_USE_AAPT2 := true
 LOCAL_JAVA_LIBRARIES := \
     ims-common
 
-include $(BUILD_PACKAGE
+include $(BUILD_PACKAGE)
