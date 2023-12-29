@@ -29,6 +29,9 @@ PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X657C
 PRODUCT_MANUFACTURER := Infinix
 
+# Pixel Charger
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 #Maintainer Tag 
 DEVICE_MAINTAINER := Miraclev1
 
