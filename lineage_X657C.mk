@@ -12,13 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1600
-
-# Inherit from merlin device makefile
 $(call inherit-product, device/infinix/X657C/device.mk)
 
 # Inherit from those products. Most specific first.
@@ -32,8 +26,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_DEVICE := X657C
 PRODUCT_NAME := lineage_X657C
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix SMART 5
+PRODUCT_MODEL := Infinix X657C
 PRODUCT_MANUFACTURER := Infinix
+
+#Maintainer Tag 
+DEVICE_MAINTAINER := Miraclev1
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
 TARGET_VENDOR := infinix
