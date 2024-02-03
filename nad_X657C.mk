@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1600
+
 # Inherit from merlin device makefile
 $(call inherit-product, device/infinix/X657C/device.mk)
 
@@ -24,26 +28,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1600
-
-# Official tag
-NAD_BUILD_TYPE := OFFICIAL
+#Nusantara Stuff
+TARGET_INCLUDE_PIXEL_CHARGER := true
+USE_PIXEL_CHARGING := true
+USE_AOSP_CLOCK := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X657C
 PRODUCT_NAME := nad_X657C
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix Smart 5
+PRODUCT_MODEL := Infinix SMART 5
 PRODUCT_MANUFACTURER := Infinix
-
-# Pixel Charger
-TARGET_INCLUDE_PIXEL_CHARGER := true
-USE_PIXEL_CHARGING := true
-
-#Maintainer Tag 
-DEVICE_MAINTAINER := Miraclev1
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
 TARGET_VENDOR := infinix
@@ -51,3 +47,5 @@ TARGET_VENDOR_PRODUCT_NAME := X657C
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Infinix/X657C-GL/Infinix-X657C:10/QP1A.190711.020/GH-GL-220821V327:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="Infinix-X657C-user 10 QP1A.190711.020 GH-GL-220821V327 release-keys"
